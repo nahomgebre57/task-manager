@@ -2,6 +2,8 @@
 
 A **modern, responsive** Task Manager web application to help you organize your daily tasks efficiently. 
 
+**Made using HTML, CSS, and JavaScript.**
+
 🌐 [Live Demo](https://taskmanagerdaily.netlify.app/)
 
 🌐 [Source Code](https://github.com/nahomgebre57/task-manager)
