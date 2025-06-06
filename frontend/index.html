@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="top-buttons">
+            <button id="show-task-manager-btn" type="button">Task Manager</button>
+            <button id="show-dashboard-btn" type="button">Dashboard</button>
+        </div>
+        <div id="task-manager-section">
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task" autocomplete="off" required>
+                <input type="text" id="task-desc-input" placeholder="Description" autocomplete="off" required style="flex:2;">
+                <div class="date-time-row">
+                    <input type="date" id="task-date-input" required style="width:130px;">
+                    <input type="time" id="task-time-input" required style="width:120px;">
+                    <select id="task-repeat-input" style="width:110px;">
+                        <option value="none">No Repeat</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+            <button id="toggle-task-list-btn" style="margin-bottom: 12px; display:none;">Hide Task List</button>
+            <ul id="task-list"></ul>
+        </div>
+        <div id="analytics-dashboard" style="margin-bottom:20px; padding:12px; background:#f8f9fa; border-radius:6px; border:1px solid #e3e3e3; display:none;">
+            <h2 style="font-size:1.1em; margin:0 0 10px 0; color:#007bff;">Task Analytics Dashboard</h2>
+            <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                <div>Total Tasks: <span id="total-tasks">0</span></div>
+                <div>Completed: <span id="completed-tasks">0</span></div>
+                <div>Pending: <span id="pending-tasks">0</span></div>
+                <div>Daily: <span id="daily-tasks">0</span></div>
+                <div>Weekly: <span id="weekly-tasks">0</span></div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align:center; color:#888; font-size:0.95em; margin:32px 0 0 0; position:relative; width:100%;">
+        &copy; 2025 <a href="https://nahom-portfolio-nine.vercel.app/" target="_blank" style="color:#2d5279; text-decoration:none;">Nahom Gebre</a>. All rights reserved.
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>

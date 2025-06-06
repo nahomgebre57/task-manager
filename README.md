@@ -28,7 +28,7 @@ A **modern, responsive** Task Manager web application to help you organize your 
    ```
 2. **Open `index.html` in your browser.**
 
-_No build tools or dependencies required!_
+_This project uses only HTML, CSS, and JavaScript—no build tools or dependencies required!_
 
 ---
 
